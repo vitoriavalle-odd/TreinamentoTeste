@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- 
+  👋 Olá, GitHub!
+  Este é o meu primeiro arquivo subido no repositório.
+  HTML é a linguagem que estrutura páginas web.
+-->
+<html lang="pt-BR">
+
+<head>
+  <!-- Metadados: informações sobre a página que o navegador precisa saber -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Primeiro Repositório</title>
+
+  <style>
+    /* CSS: aqui a gente define o visual da página */
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');
+
+    :root {
+      --bg: #f5f0e8;
+      --ink: #1a1a1a;
+      --accent: #2d6a4f;
+      --muted: #888;
+      --card: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1.5px solid var(--ink);
+      border-radius: 2px;
+      max-width: 540px;
+      width: 100%;
+      padding: 3rem 2.5rem;
+      box-shadow: 6px 6px 0 var(--ink);
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.6rem;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e0dbd0;
+      margin: 1.5rem 0;
+    }
+
+    .item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .item-num {
+      font-size: 0.7rem;
+      color: var(--muted);
+      padding-top: 2px;
+      min-width: 20px;
+    }
+
+    .item-text {
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    .item-text strong {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Animação suave na entrada */
+    .card {
+      animation: fadeUp 0.5s ease both;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HTML: aqui está o conteúdo visível da página -->
+  <div class="card">
+
+    <p class="tag">✦ GitHub • Primeiro commit</p>
+
+    <h1>Olá, <em>mundo</em>.</h1>
+    <p class="subtitle">Este arquivo foi criado para aprender o fluxo básico do GitHub.</p>
+
+    <hr class="divider" />
+
+    <!-- Lista de conceitos — edite à vontade! -->
+    <div class="item">
+      <span class="item-num">01</span>
+      <p class="item-text"><strong>Repositório</strong> é a pasta do seu projeto no GitHub. Tudo fica guardado aqui.</p>
+    </div>
+
+    <div class="item">
+      <span class="item-num">02</span>
+      <p class="item-text"><strong>Commit</strong> é salvar uma versão do arquivo com uma mensagem explicando o que mudou.</p>
+    </div>
+
+    <div class="item">
+      <span class="item-num">03</span>
+      <p class="item-text"><strong>Push</strong> é enviar as alterações do seu computador para o GitHub.</p>
+    </div>
+
+    <div class="item">
+      <span class="item-num">04</span>
+      <p class="item-text"><strong>Branch</strong> é uma linha paralela de desenvolvimento — útil pra testar sem estragar o original.</p>
+    </div>
+
+    <div class="item">
+      <span class="item-num">05</span>
+      <p class="item-text"><strong>README.md</strong> é o arquivo de apresentação do repositório. É o primeiro que as pessoas veem.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="footer">
+      <span>index.html</span>
+      <span>feito com 🌿 para aprender</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
